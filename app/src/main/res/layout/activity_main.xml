@@ -14,23 +14,41 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="8dp"
+        android:layout_marginTop="16sp"
         android:textSize="16sp"
         android:text="Quantity"
         android:textAllCaps="true" />
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16sp"
+        android:textSize="16sp"
+        android:text="+"
+        android:textAllCaps="true"
+        android:onClick="increment"/>
 
     <TextView
         android:id="@+id/quantity_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="8dp"
+        android:layout_marginTop="16sp"
         android:textSize="16sp"
         android:text="0" />
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16sp"
+        android:textSize="16sp"
+        android:text="-"
+        android:textAllCaps="true"
+        android:onClick="decrement"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="8dp"
+        android:layout_marginTop="16sp"
         android:textSize="16sp"
         android:text="Price"
         android:textAllCaps="true" />
@@ -39,14 +57,14 @@
         android:id="@+id/price_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="8dp"
+        android:layout_marginTop="16sp"
         android:textSize="16sp"
         android:text="0" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="8dp"
+        android:layout_marginTop="16sp"
         android:textSize="16sp"
         android:text="Order"
         android:textAllCaps="true"
