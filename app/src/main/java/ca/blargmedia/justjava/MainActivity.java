@@ -10,6 +10,7 @@ package ca.blargmedia.justjava;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 /**
@@ -41,15 +42,14 @@ public class MainActivity extends AppCompatActivity {
         displayQuantity(quantity);
     }
 
-    /**
+   /**
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
+        CheckBox whippedCreamCheckbox = (CheckBox) findViewById(R.id.whipped_cream_checkbox);
+        CheckBox chocolateCheckbox = (CheckBox) findViewById(R.id.chocolate_checkbox);
         int price = calculatePrice();;
-
-        //String priceMessage = "Total: $" + price;
-        //priceMessage += "\nThanks!";
-        String priceMessage = createOrderSummary(price);
+        String priceMessage = createOrderSummary(price, whippedCreamCheckbox.isChecked(), chocolateCheckbox.isChecked());
         displayMessage(priceMessage);
     }
 
@@ -85,11 +85,19 @@ public class MainActivity extends AppCompatActivity {
      * @param price the price of the drink
      * @return  the order summary
      */
-    private String createOrderSummary(int price) {
+    private String createOrderSummary(int price, boolean hasWhippedCream, boolean hasChocolate) {
         String name = "foo";
         int total = quantity * price;
-        return "Name: " + name + "\nQuantity: " + quantity + "\nTotal: $" + calculatePrice() + "\nThanks!";
+        String summary = "Name: " + name + "\nQuantity: " + quantity;
+        if(hasWhippedCream) {
+            summary += "\nAdd whipped cream";
+        }
+        if(hasChocolate) {
+            summary += "\nAdd chocolate";
+        }
+        summary += "\nTotal: $" + calculatePrice() + "\nThanks!";
 
+        return summary;
     }
 
 }
