@@ -22,8 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16sp"
             android:text="@string/heading_name"
-            android:textAllCaps="true"
-            android:textSize="16sp" />
+            style="@style/HeaderTextView" />
 
         <EditText
             android:id="@+id/name_text"
@@ -36,8 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16sp"
             android:text="@string/heading_toppings"
-            android:textAllCaps="true"
-            android:textSize="16sp" />
+            style="@style/HeaderTextView" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -67,8 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16sp"
             android:text="@string/heading_quantity"
-            android:textAllCaps="true"
-            android:textSize="16sp" />
+            style="@style/HeaderTextView" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -108,8 +105,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16sp"
             android:text="@string/heading_order_summary"
-            android:textAllCaps="true"
-            android:textSize="16sp" />
+            style="@style/HeaderTextView" />
 
         <TextView
             android:id="@+id/order_summary_text_view"
