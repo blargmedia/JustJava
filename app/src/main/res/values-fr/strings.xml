@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Just Java</string>
+    <string name="button_order">commande</string>
+    <string name="heading_name">nom</string>
+    <string name="heading_order_summary">recapitulatif de la commande</string>
+    <string name="heading_quantity">quantite</string>
+    <string name="heading_toppings">garnitures</string>
+    <string name="topping_chocolate">chocolat</string>
+    <string name="topping_whipped_cream">creme fouettee</string>
+</resources>
